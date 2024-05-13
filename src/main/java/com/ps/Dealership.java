@@ -14,7 +14,31 @@ public class Dealership {
         this.phone = phone;
     }
 
-    public ArrayList<Vehicle> getVehiclesByPrice(int minPrice, int maxPrice) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public ArrayList<Vehicle> getVehiclesByPrice(double minPrice, double maxPrice) {
         ArrayList<Vehicle> vehiclesFilteredByPrice = new ArrayList<>();
         for (Vehicle vehicle : this.inventory) {
             if (vehicle.getPrice() >= minPrice && vehicle.getPrice() <= maxPrice) {
@@ -33,7 +57,7 @@ public class Dealership {
         }
             return vehiclesFilteredByMakeModel;
         }
-        public ArrayList<Vehicle> getVehiclesByYear ( int minYear, int maxYear){
+        public ArrayList<Vehicle> getVehiclesByYear (int minYear,int maxYear){
             ArrayList<Vehicle> vehiclesFilteredByYear = new ArrayList<>();
             for (Vehicle vehicle : this.inventory) {
                 if (vehicle.getYear() >= minYear && vehicle.getYear() <= maxYear) {
@@ -51,7 +75,7 @@ public class Dealership {
             }
             return vehiclesFilteredByColor;
         }
-        public ArrayList<Vehicle> getVehiclesByMileage ( int odometer){
+        public ArrayList<Vehicle> getVehiclesByMileage (int odometer){
             ArrayList<Vehicle> vehiclesFilteredByMileage = new ArrayList<>();
             for (Vehicle vehicle : this.inventory) {
                 if (vehicle.getOdometer() == odometer) {
