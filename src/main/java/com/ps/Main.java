@@ -2,7 +2,14 @@ package com.ps;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
-       Dealership dealership = new Dealership("","","");
+        UserInterface userInterface = new UserInterface();
+        userInterface.display();
+
+
+
+    }
+}
+        /*Dealership dealership = new Dealership("","","");
 
         // Initialize with values
         Vehicle vehicle1 = new Vehicle(100,1999,"Ford","Bronco","SUV",1000000, "white", 20000);
@@ -17,4 +24,4 @@ public class Main {
         System.out.println(typeFilteredVehicles);
 
     }
-}
+}*/

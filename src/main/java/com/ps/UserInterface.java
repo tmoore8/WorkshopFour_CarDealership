@@ -164,7 +164,7 @@ public class UserInterface {
         System.out.print("Price: ");
         double price = scanner.nextDouble();
 
-        Vehicle vehicle = new Vehicle(vin, year, make, model, vehicleType, odometer, color, price);
+        Vehicle vehicle = new Vehicle(vin, year, make, model, vehicleType, color, odometer, price);
         dealership.addVehicle(vehicle);
 
         System.out.println("Vehicle added successfully.");

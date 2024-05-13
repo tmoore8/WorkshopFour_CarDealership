@@ -29,8 +29,8 @@ public class DealershipFileManager {
             while ((line = reader.readLine()) != null) {
                 String[] vehicleData = line.split("\\|");
                 Vehicle vehicle = new Vehicle(Integer.parseInt(vehicleData[0]), Integer.parseInt(vehicleData[1]),
-                        vehicleData[2], vehicleData[3], vehicleData[4], Integer.parseInt(vehicleData[5]),
-                        vehicleData[6], Double.parseDouble(vehicleData[7]));
+                        vehicleData[2], vehicleData[3], vehicleData[4], vehicleData[5], Integer.parseInt(vehicleData[6]),
+                         Double.parseDouble(vehicleData[7]));
                 vehicles.add(vehicle);
             }
             dealership.getAllVehicles().addAll(vehicles);
