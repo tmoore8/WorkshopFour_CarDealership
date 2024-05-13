@@ -13,8 +13,12 @@ public class UserInterface {
 
         do {
             displayMenu();
+            while (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Please enter a number.");
+                scanner.next(); //consume non-integer input
+            }
             command = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); //consume newline
 
             switch (command) {
                 case 1:
@@ -79,7 +83,9 @@ public class UserInterface {
         } else {
             System.out.println("------ Vehicles ------");
             for (Vehicle vehicle : vehicles) {
-                System.out.println(vehicle);
+                System.out.printf("VIN:%d, Year:%d, Make:%s, Model:%s, Type:%s, Mileage:%d, Color:%s, Price:%.2f%n",
+                        vehicle.getVin(), vehicle.getYear(), vehicle.getMake(), vehicle.getModel(),
+                        vehicle.getVehicleType(), vehicle.getOdometer(), vehicle.getColor(), vehicle.getPrice());
             }
         }
     }
@@ -149,7 +155,7 @@ public class UserInterface {
         int vin = scanner.nextInt();
         System.out.print("Year: ");
         int year = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); //consume newline
         System.out.print("Make: ");
         String make = scanner.nextLine();
         System.out.print("Model: ");
@@ -158,7 +164,7 @@ public class UserInterface {
         String vehicleType = scanner.nextLine();
         System.out.print("Mileage: ");
         int odometer = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); //consume newline
         System.out.print("Color: ");
         String color = scanner.nextLine();
         System.out.print("Price: ");
