@@ -23,11 +23,15 @@ Remove Vehicle: Users can remove an existing vehicle from the inventory.
 ___
 ## Home Screen
 ![](g/Users/tristan/Desktop/Screenshot 2024-05-12 at 11.50.39 PM.png)
+![img.png](img.png)
 ## Products Display Screen
+![img_2.png](img_2.png)
 ![](/Users/tristan/Desktop/Screenshot 2024-05-12 at 11.49.09 PM.png)
 ## Error Screen
+![img_1.png](img_1.png)
 ![](/Users/tristan/Desktop/Screenshot 2024-05-12 at 11.50.05 PM.png)
 ___
 ## Interesting code
+![img_3.png](img_3.png)
 ![](/Users/tristan/Desktop/Screenshot 2024-05-12 at 11.46.21 PM.png)
 The loop is run when the input from the user is not an integer so the program will continue to run with erroneous inputs.
